@@ -4,7 +4,7 @@ import { DocumentModel } from '../document-model';
 
 function getModalNodes(node: Node) {
   let nodes: any = [];
-  if (node.componentMeta.isModal) {
+  if (node?.componentMeta?.isModal) {
     nodes.push(node);
   }
   const children = node.getChildren();
